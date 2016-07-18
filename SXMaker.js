@@ -811,7 +811,7 @@
 			corFaixa: ['clara','escura'],
 			comportamentoLuz: ['Siga','Fuja']
 		},
-		pt {
+		pt: {
 			ports: ['S1', 'S2', 'S3', 'S4'],
 			sensors: ['Contato', 'Proximidade', 'Faixa', 'Cor', 'Luz (Lux)', 'Som (dB)', 'Temperatura (°C)',
 				'Resistência (Ohm)', 'Tensão (V)', 'Distância (cm)', 'Distância Sharp (cm)'],
