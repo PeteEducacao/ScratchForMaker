@@ -855,11 +855,11 @@
 		  [' ', 'Pare', 'paraMotores']
 		],
   		pt: [
-  		  ['h', 'Evento %b', 'event', 0],
-		  [' ', 'Conectar sensor de %m.sensors na porta %m.ports', 'connectSensor', ' ', menus['ports'][0]],
+		  ['h', 'Evento %b', 'event', 0],
+		  [' ', 'Conectar sensor de %m.sensors na porta %m.ports', 'connectSensor', ' ', 'S1'],
 	//	  [' ', '%m.on_off cabo de luz na porta %m.ports', 'setActuator', menus['on_off'][0], menus['ports'][0]],
-		  ['r', 'Ler porta %m.ports', 'readPort', menus['ports'][0]],
-		  ['r', 'Cor %m.colors', 'getColor', menus['colors'][0]],
+		  ['r', 'Ler porta %m.ports', 'readPort', 'S1'],
+		  ['r', 'Cor %m.colors', 'getColor', 'Blue'],
 		  ['-'],
 	//	  [' ', 'Configurar A%n como entrada analógica', 'setModeAnalog', 0],
 	//	  ['r', 'Ler A%n', 'analogRead', 0],
@@ -868,16 +868,16 @@
 	//	  ['r', 'Ler P%n', 'digitalRead', 0],
 	//	  [' ', '%m.on_off P%n', 'digitalWrite', menus['on_off'][0], 0],
 		  ['-'],
-		  [' ', 'Servo %m.servos %n °', 'setServo', menus['servos'][0], 0],
-		  [' ', 'Motor %m.motor %m.directions %n %', 'setMotor', menus['motor'][0], menus['directions'][0], 0],
-		  [' ', 'Pare motor %m.motor', 'stopMotor', menus['motor'][0]],
+		  [' ', 'Servo %m.servos %n °', 'setServo', 'SV1', 0],
+		  [' ', 'Motor %m.motor %m.directions %n %', 'setMotor', 'ME', 'frente', 0],
+		  [' ', 'Pare motor %m.motor', 'stopMotor', 'ME'],
 		  ['-'],
-		  ['w', 'Tocar nota %m.notes por %n segundos', 'playNoteTime', menus['notes'][0], 1],
-		  [' ', 'Tocar nota %m.notes', 'playNote', menus['notes'][0]],
+		  ['w', 'Tocar nota %m.notes por %n segundos', 'playNoteTime', 'Dó', 1],
+		  [' ', 'Tocar nota %m.notes', 'playNote', 'Dó'],
 		  [' ', 'Mudo', 'mute'],
-		  [' ', '%m.comportamentoLuz Luz', 'sigaFujaFaixa',menus['comportamentoLuz'][0]],
-		  [' ', 'Siga Faixa %m.corFaixa', 'sigaFaixa',menus['corFaixa'][0]],	
-		  [' ', 'Pare', 'paraMotores']	
+		  [' ', '%m.comportamentoLuz Luz', 'sigaFujaFaixa','Siga'],
+		  [' ', 'Siga Faixa %m.corFaixa', 'sigaFaixa','clara'],	
+		  [' ', 'Pare', 'paraMotores']
 		]
 	};
 	
