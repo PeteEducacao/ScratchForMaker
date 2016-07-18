@@ -882,8 +882,10 @@
 	};
 	
 	var descriptor = {
-		blocks: blocks,
-		menus: menus
+		blocks: blocks[lang],
+    		menus: menus[lang],
+		url: 'http://PeteEducacao.github.io/ScratchForMaker'
 	};
+	
 	ScratchExtensions.register('ALPHA Maker', descriptor, ext,{type: 'serial'});
 })({});
