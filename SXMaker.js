@@ -828,7 +828,7 @@
 		}
 	};
 	
-	var blocks = [
+	var blocks = {
 		en: [
 		  ['h', 'Evento %b', 'event', 0],
 		  [' ', 'Conectar sensor de %m.sensors na porta %m.ports', 'connectSensor', ' ', menus['ports'][0]],
@@ -878,8 +878,8 @@
 		  [' ', '%m.comportamentoLuz Luz', 'sigaFujaFaixa',menus['comportamentoLuz'][0]],
 		  [' ', 'Siga Faixa %m.corFaixa', 'sigaFaixa',menus['corFaixa'][0]],	
 		  [' ', 'Pare', 'paraMotores']	
-  		]
-	];
+		]
+	};
 	
 	var descriptor = {
 		blocks: blocks,
