@@ -808,7 +808,7 @@
 	var menus = {
 		en: {
 			ports: ['S1', 'S2', 'S3', 'S4'],
-			sensors: ['Contato', 'Proximidade', 'Faixa', 'Cor', 'Luz (Lux)', 'Som (dB)', 'Temperatura (°C)',
+			sensors: ['Contact', 'Proximity', 'Line', 'Color', 'Light (Lux)', 'Sound (dB)', 'Temperature (°C)',
 				'Resistência (Ohm)', 'Tensão (V)', 'Distância (cm)', 'Distância Sharp (cm)'],
 			colors: [ 'Blue', 'Red', 'Yellow', 'Green', 'White', 'Black', 'Indefinite'],
 			enable_disable: ['Habilite', 'Desabilite'],
@@ -817,9 +817,10 @@
 			servos: ['SV1', 'SV2'],
 			motor: ['ME', 'MD'],
 			directions: ['frente', 'ré'],
-			notes: ['Dó', 'Réb', 'Ré', 'Mib', 'Mi', 'Fá', 'Solb', 'Sol', 'Láb', 'Lá', 'Síb', 'Si'],
-			corFaixa: ['clara','escura'],
-			comportamentoLuz: ['Siga','Fuja']
+			notes: ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B'],
+			corFaixa: ['light','dark'],
+			comportamentoLuz: ['Follow','Escape from']
+			
 		},
 		pt: {
 			ports: ['S1', 'S2', 'S3', 'S4'],
@@ -855,14 +856,14 @@
 		  ['-'],
 		  [' ', 'Servo %m.servos %n °', 'setServo', 'SV1', 0],
 		  [' ', 'Motor %m.motor %m.directions %n %', 'setMotor', 'ME', 'frente', 0],
-		  [' ', 'Pare motor %m.motor', 'stopMotor', 'ME'],
+		  [' ', 'Stop motor %m.motor', 'stopMotor', 'ME'],
 		  ['-'],
-		  ['w', 'Tocar nota %m.notes por %n segundos', 'playNoteTime', 'Dó', 1],
-		  [' ', 'Tocar nota %m.notes', 'playNote', 'Dó'],
+		  ['w', 'Play note %m.notes for %n seconds', 'playNoteTime', 'c', 1],
+		  [' ', 'Play note %m.notes', 'playNote', 'C'],
 		  [' ', 'Mudo', 'mute'],
-		  [' ', '%m.comportamentoLuz Luz', 'sigaFujaFaixa','Siga'],
-		  [' ', 'Siga Faixa %m.corFaixa', 'sigaFaixa','clara'],	
-		  [' ', 'Pare', 'paraMotores']
+		  [' ', '%m.comportamentoLuz light', 'sigaFujaFaixa','Follow'],
+		  [' ', 'Follow line %m.corFaixa', 'sigaFaixa','light'],	
+		  [' ', 'Stop', 'paraMotores']
 		],
   		pt: [
 		  ['h', 'Evento %b', 'event', 0],
