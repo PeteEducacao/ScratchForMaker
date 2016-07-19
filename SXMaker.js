@@ -809,14 +809,14 @@
 		en: {
 			ports: ['S1', 'S2', 'S3', 'S4'],
 			sensors: ['Contact', 'Proximity', 'Line', 'Color', 'Light (Lux)', 'Sound (dB)', 'Temperature (°C)',
-				'Resistência (Ohm)', 'Tensão (V)', 'Distância (cm)', 'Distância Sharp (cm)'],
-			colors: [ 'Blue', 'Red', 'Yellow', 'Green', 'White', 'Black', 'Indefinite'],
-			enable_disable: ['Habilite', 'Desabilite'],
-			on_off: ['Ligar', 'Desligar'],
-			pinModes: ['entrada', 'saída'],
+				'Resistance (Ohm)', 'Electrical Voltage (V)', 'Distance (cm)', 'Sharp Distance (cm)'],
+			colors: [ 'Blue', 'Red', 'Yellow', 'Green', 'White', 'Black', 'Indefine'],
+			enable_disable: ['Enable', 'Disable'],
+			on_off: ['Turn on', 'Turn off'],
+			pinModes: ['imput', 'output'],
 			servos: ['SV1', 'SV2'],
 			motor: ['ME', 'MD'],
-			directions: ['frente', 'ré'],
+			directions: ['Forward', 'Backward'],   
 			notes: ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B'],
 			corFaixa: ['light','dark'],
 			comportamentoLuz: ['Follow','Escape from']
@@ -841,11 +841,11 @@
 	
 	var blocks = {
 		en: [
-		  ['h', 'Evento %b', 'event', 0],
-		  [' ', 'Conectar sensor de %m.sensors na porta %m.ports', 'connectSensor', ' ', 'S1'],
+		  ['h', 'Event %b', 'event', 0], Connect color sensor on S1 port
+		  [' ', 'Connect  %m.sensors sensor on  %m.ports port', 'connectSensor', ' ', 'S1'],
 	//	  [' ', '%m.on_off cabo de luz na porta %m.ports', 'setActuator', menus['on_off'][0], menus['ports'][0]],
-		  ['r', 'Ler porta %m.ports', 'readPort', 'S1'],
-		  ['r', 'Cor %m.colors', 'getColor', 'Blue'],
+		  ['r', 'Read port %m.ports', 'readPort', 'S1'],
+		  ['r', 'Color %m.colors', 'getColor', 'Blue'],
 		  ['-'],
 	//	  [' ', 'Configurar A%n como entrada analógica', 'setModeAnalog', 0],
 	//	  ['r', 'Ler A%n', 'analogRead', 0],
@@ -855,12 +855,12 @@
 	//	  [' ', '%m.on_off P%n', 'digitalWrite', menus['on_off'][0], 0],
 		  ['-'],
 		  [' ', 'Servo %m.servos %n °', 'setServo', 'SV1', 0],
-		  [' ', 'Motor %m.motor %m.directions %n %', 'setMotor', 'ME', 'frente', 0],
+		  [' ', 'Motor %m.motor %m.directions %n %', 'setMotor', 'ME', 'Forward', 0],
 		  [' ', 'Stop motor %m.motor', 'stopMotor', 'ME'],
 		  ['-'],
 		  ['w', 'Play note %m.notes for %n seconds', 'playNoteTime', 'c', 1],
 		  [' ', 'Play note %m.notes', 'playNote', 'C'],
-		  [' ', 'Mudo', 'mute'],
+		  [' ', 'Mute', 'mute'],
 		  [' ', '%m.comportamentoLuz light', 'sigaFujaFaixa','Follow'],
 		  [' ', 'Follow line %m.corFaixa', 'sigaFaixa','light'],	
 		  [' ', 'Stop', 'paraMotores']
