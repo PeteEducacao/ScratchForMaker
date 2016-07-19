@@ -841,7 +841,7 @@
 	
 	var blocks = {
 		en: [
-		  ['h', 'Event %b', 'event', 0], Connect color sensor on S1 port
+		  ['h', 'Event %b', 'event', 0], 
 		  [' ', 'Connect  %m.sensors sensor on  %m.ports port', 'connectSensor', ' ', 'S1'],
 	//	  [' ', '%m.on_off cabo de luz na porta %m.ports', 'setActuator', menus['on_off'][0], menus['ports'][0]],
 		  ['r', 'Read port %m.ports', 'readPort', 'S1'],
