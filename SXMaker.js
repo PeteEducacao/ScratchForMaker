@@ -817,7 +817,7 @@
 			servos: ['SV1', 'SV2'],
 			motor: ['ME', 'MD'],
 			directions: ['Forward', 'Backward'],   
-			notes: ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B'],
+			notes: ['C', 'D flat', 'D', 'E flat', 'E', 'F', 'G flat', 'G', 'A flat', 'A', 'B flat', 'B'],
 			corFaixa: ['light','dark'],
 			comportamentoLuz: ['Follow','Escape from']
 			
@@ -832,8 +832,8 @@
 			pinModes: ['entrada', 'salida'],
 			servos: ['SV1', 'SV2'],
 			motor: ['ME', 'MD'],
-			directions: ['frente', 'ré'],
-			notes: ['Dó', 'Réb', 'Ré', 'Mib', 'Mi', 'Fá', 'Solb', 'Sol', 'Láb', 'Lá', 'Síb', 'Si'],
+			directions: ['avanza', 'retrocede'],    
+			notes: ['Do', 'Re bemol', 'Re', 'Mi bemol', 'Mi', 'Fa', 'Sol bemol', 'Sol', 'La bemol', 'La', 'Si bemol', 'Si'],
 			corFaixa: ['clara','oscura'],
 			comportamentoLuz: ['Sigue','Escapa de']
 		},
@@ -848,7 +848,7 @@
 			servos: ['SV1', 'SV2'],
 			motor: ['ME', 'MD'],
 			directions: ['frente', 'ré'],
-			notes: ['Dó', 'Réb', 'Ré', 'Mib', 'Mi', 'Fá', 'Solb', 'Sol', 'Láb', 'Lá', 'Síb', 'Si'],
+			notes: ['Dó', 'Ré bemol', 'Ré', 'Mi bemol', 'Mi', 'Fá', 'Sol bemol', 'Sol', 'Lá bemol', 'Lá', 'Sí bemol', 'Si'],
 			corFaixa: ['clara','escura'],
 			comportamentoLuz: ['Siga','Fuja']
 		}
@@ -883,22 +883,22 @@
 		
 		es: [
 		  ['h', 'Evento %b', 'event', 0],
-		  [' ', 'Conectar sensor de %m.sensors na porta %m.ports', 'connectSensor', ' ', 'S1'],
+		  [' ', 'Conexión de sensor de %m.sensors en lo puerto %m.ports', 'connectSensor', ' ', 'S1'],
 
-		  ['r', 'Ler porta %m.ports', 'readPort', 'S1'],
-		  ['r', 'Cor %m.colors', 'getColor', 'Azul'],
+		  ['r', 'Leer puerto %m.ports', 'readPort', 'S1'],
+		  ['r', 'Color %m.colors', 'getColor', 'Azul'],
 		  ['-'],
 
 		  ['-'],
 		  [' ', 'Servo %m.servos %n °', 'setServo', 'SV1', 0],
-		  [' ', 'Motor %m.motor %m.directions %n %', 'setMotor', 'ME', 'frente', 0],
+		  [' ', 'Motor %m.motor %m.directions %n %', 'setMotor', 'ME', 'avanza', 0],
 		  [' ', 'Pare motor %m.motor', 'stopMotor', 'ME'],
 		  ['-'],
-		  ['w', 'Tocar nota %m.notes por %n segundos', 'playNoteTime', 'Dó', 1],
-		  [' ', 'Tocar nota %m.notes', 'playNote', 'Dó'],
+		  ['w', 'Tocar la nota %m.notes durante %n segundos', 'playNoteTime', 'Do', 1],
+		  [' ', 'Tocar la nota %m.notes', 'playNote', 'Dó'],
 		  [' ', 'Mudo', 'mute'],
-		  [' ', '%m.comportamentoLuz Luz', 'sigaFujaFaixa','Siga'],
-		  [' ', 'Siga Faixa %m.corFaixa', 'sigaFaixa','clara'],	
+		  [' ', '%m.comportamentoLuz Luz', 'sigaFujaFaixa','Sigue'],
+		  [' ', 'Sigue a Linea %m.corFaixa', 'sigaFaixa','clara'],	
 		  [' ', 'Pare', 'paraMotores']
 		],
 		
@@ -920,11 +920,11 @@
 		  [' ', 'Motor %m.motor %m.directions %n %', 'setMotor', 'ME', 'frente', 0],
 		  [' ', 'Pare motor %m.motor', 'stopMotor', 'ME'],
 		  ['-'],
-		  ['w', 'Tocar nota %m.notes por %n segundos', 'playNoteTime', 'Dó', 1],
-		  [' ', 'Tocar nota %m.notes', 'playNote', 'Dó'],
+		  ['w', 'Tocar a nota %m.notes por %n segundos', 'playNoteTime', 'Dó', 1],
+		  [' ', 'Tocar a nota %m.notes', 'playNote', 'Dó'],
 		  [' ', 'Mudo', 'mute'],
 		  [' ', '%m.comportamentoLuz Luz', 'sigaFujaFaixa','Siga'],
-		  [' ', 'Siga Faixa %m.corFaixa', 'sigaFaixa','clara'],	
+		  [' ', 'Siga a Faixa %m.corFaixa', 'sigaFaixa','clara'],	
 		  [' ', 'Pare', 'paraMotores']
 		]
 	};
