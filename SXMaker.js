@@ -895,7 +895,7 @@
 		  [' ', 'Pare motor %m.motor', 'stopMotor', 'ME'],
 		  ['-'],
 		  ['w', 'Tocar la nota %m.notes durante %n segundos', 'playNoteTime', 'Do', 1],
-		  [' ', 'Tocar la nota %m.notes', 'playNote', 'Dó'],
+		  [' ', 'Tocar la nota %m.notes', 'playNote', 'Do'],
 		  [' ', 'Mudo', 'mute'],
 		  [' ', '%m.comportamentoLuz Luz', 'sigaFujaFaixa','Sigue'],
 		  [' ', 'Sigue a Linea %m.corFaixa', 'sigaFaixa','clara'],	
