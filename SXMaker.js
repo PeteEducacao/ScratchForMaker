@@ -822,6 +822,21 @@
 			comportamentoLuz: ['Follow','Escape from']
 			
 		},
+		es: {
+			ports: ['S1', 'S2', 'S3', 'S4'],
+			sensors: ['Contato', 'Proximidade', 'Faixa', 'Cor', 'Luz (Lux)', 'Som (dB)', 'Temperatura (°C)',
+				'Resistência (Ohm)', 'Tensão (V)', 'Distância (cm)'],
+			colors: ['Azul', 'Vermelha', 'Amarela', 'Verde', 'Branca', 'Preta', 'Indefinida'],
+			enable_disable: ['Habilite', 'Desabilite'],
+			on_off: ['Ligar', 'Desligar'],
+			pinModes: ['entrada', 'saída'],
+			servos: ['SV1', 'SV2'],
+			motor: ['ME', 'MD'],
+			directions: ['frente', 'ré'],
+			notes: ['Dó', 'Réb', 'Ré', 'Mib', 'Mi', 'Fá', 'Solb', 'Sol', 'Láb', 'Lá', 'Síb', 'Si'],
+			corFaixa: ['clara','escura'],
+			comportamentoLuz: ['Siga','Fuja']
+		},
 		pt: {
 			ports: ['S1', 'S2', 'S3', 'S4'],
 			sensors: ['Contato', 'Proximidade', 'Faixa', 'Cor', 'Luz (Lux)', 'Som (dB)', 'Temperatura (°C)',
@@ -865,6 +880,28 @@
 		  [' ', 'Follow %m.corFaixa line ', 'sigaFaixa','light'],	
 		  [' ', 'Stop', 'paraMotores']
 		],
+		
+		es: [
+		  ['h', 'Evento %b', 'event', 0],
+		  [' ', 'Conectar sensor de %m.sensors na porta %m.ports', 'connectSensor', ' ', 'S1'],
+
+		  ['r', 'Ler porta %m.ports', 'readPort', 'S1'],
+		  ['r', 'Cor %m.colors', 'getColor', 'Azul'],
+		  ['-'],
+
+		  ['-'],
+		  [' ', 'Servo %m.servos %n °', 'setServo', 'SV1', 0],
+		  [' ', 'Motor %m.motor %m.directions %n %', 'setMotor', 'ME', 'frente', 0],
+		  [' ', 'Pare motor %m.motor', 'stopMotor', 'ME'],
+		  ['-'],
+		  ['w', 'Tocar nota %m.notes por %n segundos', 'playNoteTime', 'Dó', 1],
+		  [' ', 'Tocar nota %m.notes', 'playNote', 'Dó'],
+		  [' ', 'Mudo', 'mute'],
+		  [' ', '%m.comportamentoLuz Luz', 'sigaFujaFaixa','Siga'],
+		  [' ', 'Siga Faixa %m.corFaixa', 'sigaFaixa','clara'],	
+		  [' ', 'Pare', 'paraMotores']
+		],
+		
   		pt: [
 		  ['h', 'Evento %b', 'event', 0],
 		  [' ', 'Conectar sensor de %m.sensors na porta %m.ports', 'connectSensor', ' ', 'S1'],
