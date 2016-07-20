@@ -808,9 +808,9 @@
 	var menus = {
 		en: {
 			ports: ['S1', 'S2', 'S3', 'S4'],
-			sensors: ['Contact', 'Proximity', 'Line', 'Color', 'Light (Lux)', 'Sound (dB)', 'Temperature (°C)',
-				'Resistance (Ohm)', 'Electrical Voltage (V)', 'Distance (cm)', 'Sharp Distance (cm)'],
-			colors: [ 'Blue', 'Red', 'Yellow', 'Green', 'White', 'Black', 'Indefine'],
+			sensors: ['Touch', 'Infrared', 'Line', 'Color', 'Light (Lux)', 'Sound (dB)', 'Temperature (°C)',
+				'Electrical Resistance (Ohm)', 'Electrical Voltage (V)', 'Ultrasonic (cm)'],
+			colors: [ 'Blue', 'Red', 'Yellow', 'Green', 'White', 'Black', 'Undefined'],
 			enable_disable: ['Enable', 'Disable'],
 			on_off: ['Turn on', 'Turn off'],
 			pinModes: ['imput', 'output'],
@@ -825,7 +825,7 @@
 		pt: {
 			ports: ['S1', 'S2', 'S3', 'S4'],
 			sensors: ['Contato', 'Proximidade', 'Faixa', 'Cor', 'Luz (Lux)', 'Som (dB)', 'Temperatura (°C)',
-				'Resistência (Ohm)', 'Tensão (V)', 'Distância (cm)', 'Distância Sharp (cm)'],
+				'Resistência (Ohm)', 'Tensão (V)', 'Distância (cm)'],
 			colors: ['Azul', 'Vermelha', 'Amarela', 'Verde', 'Branca', 'Preta', 'Indefinida'],
 			enable_disable: ['Habilite', 'Desabilite'],
 			on_off: ['Ligar', 'Desligar'],
@@ -858,11 +858,11 @@
 		  [' ', 'Motor %m.motor %m.directions %n %', 'setMotor', 'ME', 'Forward', 0],
 		  [' ', 'Stop motor %m.motor', 'stopMotor', 'ME'],
 		  ['-'],
-		  ['w', 'Play note %m.notes for %n seconds', 'playNoteTime', 'c', 1],
-		  [' ', 'Play note %m.notes', 'playNote', 'C'],
+		  ['w', 'Play musical note %m.notes for %n seconds', 'playNoteTime', 'c', 1],
+		  [' ', 'Play musical note %m.notes', 'playNote', 'C'],
 		  [' ', 'Mute', 'mute'],
-		  [' ', '%m.comportamentoLuz light', 'sigaFujaFaixa','Follow'],
-		  [' ', 'Follow line %m.corFaixa', 'sigaFaixa','light'],	
+		  [' ', '%m.comportamentoLuz  the light', 'sigaFujaFaixa','Follow'],
+		  [' ', 'Follow %m.corFaixa line ', 'sigaFaixa','light'],	
 		  [' ', 'Stop', 'paraMotores']
 		],
   		pt: [
